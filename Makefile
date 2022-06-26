@@ -1,6 +1,7 @@
 KDIR ?= /lib/modules/$(shell uname -r)/build
-# Uncomment to use WSL kernel. See README.md for installation details.
-# KDIR ?= ${HOME}/WSL2-Linux-Kernel
+# To make this module for WSL2 linux kernel,
+# make KDIR=${HOME}/WSL2-Linux-Kernel
+# See README.md for WSL linux kernel build details.
 
 obj-m :=simple_char_driver.o
 
